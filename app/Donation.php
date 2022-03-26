@@ -16,7 +16,8 @@ class Donation extends Model
     public function setStatusPending()
     {
         $this->attributes['status'] = 'pending';
-        self::save();
+        //self::save();
+        this->save();
     }
 
     /**
@@ -27,7 +28,8 @@ class Donation extends Model
     public function setStatusSuccess()
     {
         $this->attributes['status'] = 'success';
-        self::save();
+        //self::save();
+        this->save();
     }
 
     /**
@@ -38,7 +40,8 @@ class Donation extends Model
     public function setStatusFailed()
     {
         $this->attributes['status'] = 'failed';
-        self::save();
+        //self::save();
+        this->save();
     }
 
     /**
@@ -49,6 +52,7 @@ class Donation extends Model
     public function setStatusExpired()
     {
         $this->attributes['status'] = 'expired';
-        self::save();
+        //self::save();
+        this->save();
     }
 }
